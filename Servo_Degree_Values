@@ -1,0 +1,28 @@
+Servo 5: (based off of 90 degrees)
+max: 8.64 degrees
+    low: 9.8
+    high: 13.3
+    hypot: 23.3
+mid: 0 degrees
+
+
+min: 6.4 degrees
+    low: 10.1
+    high: 12.7
+    hypot: 23.3
+
+Servo 3: (based off of 90 degrees)
+max: 4.431 degrees
+    low: 10.6 cm
+    high: 12.4 cm
+    hypot: 23.3
+
+mid: 0
+    low:
+    high:
+    hypot:
+    theta: 0
+min: 10.38 degrees
+    low: 9 CM
+    high: 13.2 CM
+    hypotenuse = 23.3 CM

@@ -3,8 +3,6 @@ max: 8.64 degrees
     low: 9.8
     high: 13.3
     hypot: 23.3
-mid: 0 degrees
-
 
 min: 6.4 degrees
     low: 10.1
@@ -17,7 +15,6 @@ max: 4.431 degrees
     high: 12.4 cm
     hypot: 23.3
 
-mid: 0
     low:
     high:
     hypot:
@@ -26,3 +23,112 @@ min: 10.38 degrees
     low: 9 CM
     high: 13.2 CM
     hypotenuse = 23.3 CM
+
+Points:
+Servo 5:
+Below 0:
+    Degrees: 9.8,
+
+    input: 0.0725
+      low: 10.3
+    high: 11.7
+      theta:
+    input: 0.0775
+      low: 10.2
+      high: 11.5
+      theta:
+    input:0.0850
+      low:10.2
+      high:12.5
+      theta:
+    input:0.09
+      low:10.2
+      high:12.5
+    input:0.09
+      low:10.1
+      high:12.6
+Medium:
+    input: 0.0625
+      low:11.4
+      high:11.4
+      theta:
+Above 0:
+    input: 0.0550
+      low: 11.2
+      high:11.75
+      theta:
+    input: 0.05
+      low: 10.75
+      high: 12.25
+      theta:
+    input: 0.045
+      low: 10.5
+      high:12.5
+      theta:
+    input: 0.040
+      low:10.3
+      high:12.7
+      theta:
+    input: 0.035
+      low: 10
+      high:13.1
+    input: 0.03
+      low: 9.9
+      high: 13.2
+
+
+Servo 3
+Below 0:
+    input: 0.0199
+      low: 10
+      high: 13.6
+      theta:
+    input: 0.025
+      low: 10.1
+      high: 13.6
+      theta:
+    input: 0.030
+      low: 10.2
+      high: 13.5
+      theta:
+    input: 0.035
+      low: 10.3
+      high: 13.4
+      theta:
+    input: 0.04
+      low: 10.6
+      high: 13
+      theta:
+    input: 0.045
+      low: 10.85
+      high: 12.8
+      theta:
+Close to Midpoint:
+    input: 0.05
+      low: 11
+      high: 12.5
+      theta:
+    input: 0.055
+      low: 11.5
+      high: 11.9
+
+Above 0:
+    input: 0.06
+      high: 11.75
+      low: 11.6
+    input: 0.07
+      low: 11
+      high: 12.2
+      theta:
+    input: 0.075
+      low: 10.6
+      high: 12.6
+    input: 0.080
+      low: 10.5
+      high: 12.7
+    input: 0.085
+      low: 10.4
+      high: 12.9
+    input: 0.090
+      low: 10.4
+      high: 12.9

@@ -1,0 +1,6 @@
+Important Equations
+Mapping from theta -> servo 5:
+f(theta) = 8e-5(theta)^2 - (0.042)(theta) + 0.0621
+
+Mapping from theta -> servo 3:
+f(theta) = 0.0039*theta + 0.065

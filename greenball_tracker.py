@@ -21,6 +21,7 @@ Track a green ball using OpenCV.
 
 import cv2
 import numpy as np
+import time
 
 # For OpenCV2 image display
 WINDOW_NAME = 'GreenBallTracker' 
@@ -40,8 +41,8 @@ def track(image):
     hsv = cv2.cvtColor(blur, cv2.COLOR_BGR2HSV)
 
     # Threshold the HSV image for only green colors
-    lower_green = np.array([7.40, 146, 129]) # 7.40, 0.571, 0.504
-    upper_green = np.array([10.0, 203, 106]) # 10, 0.795, 0.415
+    lower_green = np.array([ 5,  50, 50]) # 7.40, 0.571, 0.504
+    upper_green = np.array([15, 255, 255]) # 10, 0.795, 0.415
 
     # Threshold the HSV image to get only green colors
     mask = cv2.inRange(hsv, lower_green, upper_green)
@@ -87,14 +88,15 @@ if __name__ == '__main__':
     capture.set(4, 180)
     capture.set(5, 60)
     while True:
-
+        time1 = time.time()
         okay, image = capture.read()
+        #print "Read Image: ", time.time() - time1
 
         if okay:
-
+            time2 = time.time()
             if not track(image):
                 break
-          
+            #print " Process: ", time.time() - time2
             if cv2.waitKey(1) & 0xFF == 27:
                 break
 
